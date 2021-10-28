@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="pre-game">
+        <div class="content">
+            <h2>WASTE SEGREGATION SIMULATOR (Version - 2.1) </h2>
+            <div class="pre-game-container">
+                <div class="howToPlay">
+                    <h3 style="text-align: initial;margin-bottom: 1em;">How To Play:</h3>
+                    <ol>
+                        <li>Kindly fill-up the form so that we can mail you your result.
+                        </li>
+                        <li>At first, on the left-hand side of the screen, you will need to select the number of items with which you would like to work.</li>
+                        <li>On the right-hand side of the screen, different waste items will be shown one after another.
+                        </li>
+                        <li>Below there are five bins named after each type of waste category- wet, dry, sanitary, E-waste, and Reject/hazardous waste. Select a bin to drop the waste item displayed above into that particular category.
+                        </li>
+                        <li>After completion, click on the submit button to get your score. Check your email to view your detailed scorecard.
+                        </li>
+                    </ol>
+            
+                </div>
+               <div class="details">
+                   <div class="user-input-part">
+                    <label>Name:</label><input type="text" id="name" placeholder="Enter Your Name" required>
+                    <label>Age:</label><input type="number" id="age" placeholder="Enter Your Age" required>
+                    <label>Email:</label><input type="text" id="email" placeholder="Enter Your email" required>
+                    <label>Country:</label>
+                    <select name="" id="country" required>
+                        <option value="none" selected disabled hidden>
+                            Select an Option
+                        </option>
+                       <option value=India>India</option>
+                       <option value=Other>Other</option>
+                      
+                     </select>
+                    
+                        <label class="pinLabel">Pin-Code:</label><input type="number" id="pin" placeholder="Enter Your pin-code">
+                     
+                    
+                        <label class="countryNameLabel">Country-Name:</label><input type="text" id="countryName" placeholder="Enter Your Country" >
+                     
+                    
+                    <label>Gender</label>
+                    <select name="" id="gender" required>
+                         <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                      </select>
+                   </div>
+                    
+                    <button class="start-game">START THE SIMULATOR</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="result-error-box resultErrorBox">
+        <div class="results">
+           <div class="total-score">
+               <strong>Total Score </strong>
+               <span class="score"></span>
+           </div>
+           <div class="errors">
+              <strong>Detailed Result</strong>
+               <span class="errorSpan"></span>
+           </div>
+           <button class="resultOkButton">OK</button>
+       </div>
+   </div>
+   <div class="to-give-padding">
+    <div class="outermost">
+        <div class="other-box">
+            <h2>WASTE SEGREGATION SIMULATOR - (V2.1)</h2>
+            <div class="select-total-number">
+                <div>Select The Number Of Items You Would Like To Segregate
+                </div>
+                <select name="" class="totalCategoriesOptions">
+                    <option value=20>20</option>
+                    <option value=30>30</option>
+                    <option value=40>40</option>
+                </select>
+            </div>
+       </div>
+        <div class="outer-box">
+           
+            <div class="categories-results-container">
+                <div class="to-make-circle">
+                  <div class="showing-container">
+                    <div class="showing">
+                    
+                    </div>  
+                    <div class="showingNow">
+                      <div class="Type">
+                          Waste Name
+                      </div>
+                      <div class="category"></div>
+                  </div>  
+                  
+                    
+                  </div>
+                 <div class="categories-container">
+     
+                     <div class="divider">
+                        <iframe src="https://giphy.com/embed/xTk9ZvMnbIiIew7IpW" width="80" height="80" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                         <img src="" alt="" class="image">
+                     </div>
+     
+                  </div>
+                  
+                </div> 
+                 
+               
+             </div>
+             <div class="division-2">
+                 <div class="instruction">
+                    Click a category
+                 </div>
+                <div class="process-boxes">
+                    
+                    <div class="wetWaste wet-waste waste-names">WET WASTE <div class="counter"> (0)</div></div>
+                </div>
+                <div class="process-boxes">
+                    <div class="sanitaryWaste sanitary-waste waste-names">SANITARY WASTE <div class="counter"> (0)</div></div>
+                </div>
+                <div class= "process-boxes">
+                    <div class="dryWaste dry-waste waste-names">DRY WASTE <div class="counter"> (0)</div></div>
+                   
+                </div>
+                <div class="process-boxes">
+                    <div class="eWaste e-waste waste-names">E-WASTE <div class="counter"> (0)</div></div>
+                  
+                   
+                </div>
+                <div class="process-boxes">
+                    <div class="rejectWaste reject-waste waste-names">REJECT WASTE <div class="counter"> (0)</div></div>
+                </div>
+                
+            </div>
+            <button class="submit">Submit</button>
+         </div> 
+       </div>
+
+   </div>
+   
+   
+
+   <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase.js"></script>
+    <script src="index.js"></script>
+
+   
+</body>
+
+</html>
