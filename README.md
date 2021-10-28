@@ -1,4 +1,4 @@
-# waste-segregator
+# Waste Segregator
 
 ### An educational tool to make people aware about the type of wastes. Made with html, css and javascript. 
 
